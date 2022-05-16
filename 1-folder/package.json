@@ -1,0 +1,19 @@
+{
+  "name": "1-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "express": "^4.17.3",
+    "has-flag": "^5.0.1",
+    "mongoose": "^6.2.5",
+    "pug": "^3.0.2"
+  }
+}

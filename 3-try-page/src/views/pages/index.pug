@@ -1,0 +1,81 @@
+extends ../template/template
+block main
+ header.header-main
+  img.img__bg(src="assets/hands.jpg", alt="") 
+  nav.nav__menu
+   a.page-logo(href="/"): img.logo-nav(src="/assets/logo.png", alt="Logo")
+   ul#list.nav__main.nav__main--disappear
+     li.nav__item: a.nav__item--link(href="/about") About
+     li.nav__item: a.nav__item--link(href="/contact") Contact
+     li.nav__item: a.nav__item--link(href="#") Item 3 
+     li.nav__item: a.nav__item--link(href="#") Item 4 
+   img#hamburger.hamburger(src="assets/bx-menu.svg", alt="Menu")
+  div.header-text 
+   h1.page-title Light Music
+   p.text-little The Place Where Music Lays
+
+ main
+  section.publicity__container
+   .publicity-text__container
+    h2.publicity-text__title Transform Your Brand
+    p.publicity-text__info Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto voluptas officia quas molestiae soluta? Sapiente aspernatur neque hic odio!
+    a.publicity-text__link(href="#") Learn More
+   img.publicity-img(src="/assets/drums.jpg", alt="Drums")
+
+  section.publicity__container
+    img.publicity-img(src="/assets/guitar-bass.jpg", alt="Drums")     
+    .publicity-text__container
+     h2.publicity-text__title Stand Out To The Right Audience
+     p.publicity-text__info Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto voluptas officia quas molestiae soluta? Sapiente aspernatur neque hic odio!
+     a.publicity-text__link(href="#") Learn More
+
+  section.publicity-filled__container 
+   .publicity-filled__item
+    img.filled-img(src="/assets/rock-hands.jpg", alt="Blue Disc")
+    .publicity-filled__text
+     h2.publicity-filled__title Singing Lessons      
+     p.publicity-filled__info Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet illum beatae? Porro iste reiciendis quos nihil. Iure, animi necessitatibus? 
+
+   .publicity-filled__item
+    img.filled-img(src="assets/production.jpg", alt="Console")
+    .publicity-filled__text
+     h2.publicity-filled__title Production Methods     
+     p.publicity-filled__info Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet illum beatae? Porro iste reiciendis quos nihil. Iure, animi necessitatibus? 
+     
+  section.outcomes__main
+   .outcomes__container 
+    img.outcomes__img(src="/assets/equalizer.svg", alt="Tune")
+    .outcomes-text__container
+     h2.outcomes-text__title Reach what you want
+     p.outcomes-text__info Enroll to our acamedy to achieve your goals in music in the best way
+
+   .outcomes__container.borderline 
+    img.outcomes__img(src="/assets/bx-microphone.svg", alt="Microphone")
+    .outcomes-text__container
+     h2.outcomes-text__title Guaranteed Learning
+     p.outcomes-text__info With us you are going to see what's how the best learning feels like
+
+   .outcomes__container 
+    img.outcomes__img(src="/assets/album.svg", alt="Album")
+    .outcomes-text__container
+     h2.outcomes-text__title Be part of us 
+     p.outcomes-text__info Hurry Up and take a look of what we are we'll be glad to meet you   
+
+  section.gallery__container
+   img.gallery__item(src="assets/band-playing.jpg", alt="Band Playing")    
+   img.gallery__item(src="assets/console.jpg", alt="Console")    
+   img.gallery__item(src="assets/instruments.jpg", alt="Instruments")    
+   img.gallery__item(src="assets/disk.jpg", alt="Disc")    
+
+ footer.footer__main 
+  a.page-logo(href="/"): img.logo-nav(src="/assets/logo.png", alt="")
+  ul.nav__footer
+     li.nav__item: a.nav__footer--link(href="/about") About
+     li.nav__item: a.nav__footer--link(href="/contact") Contact
+     li.nav__item: a.nav__footer--link(href="#") Item 3 
+     li.nav__item: a.nav__footer--link(href="#") Item 4 
+  .social-media
+   a.social-media__link(href="#"): img.social-media__img(src="assets/bxl-facebook-circle.svg", alt="Facebook")  
+   a.social-media__link(href="#"): img.social-media__img(src="assets/bxl-twitter.svg", alt="Twitter")  
+   a.social-media__link(href="#"): img.social-media__img(src="assets/bxl-instagram.svg", alt="Instagram")  
+ script(src="js/landing.js") 

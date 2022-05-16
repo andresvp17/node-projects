@@ -1,0 +1,49 @@
+extends ../template/template
+block main 
+ header.header-main
+  img.img__bg(src="https://images.pexels.com/photos/164745/pexels-photo-164745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="") 
+  nav.nav__menu
+   a.page-logo(href="/"): img.logo-nav(src="/assets/logo.png", alt="Logo")
+   ul#list.nav__main.nav__main--disappear
+    li.nav__item: a.nav__item--link(href="/about") About
+    li.nav__item: a.nav__item--link(href="/contact") Contact
+    li.nav__item: a.nav__item--link(href="#") Item 3 
+    li.nav__item: a.nav__item--link(href="#") Item 4 
+   img#hamburger.hamburger(src="assets/bx-menu.svg", alt="Menu")
+  div.header-text 
+   h1.page-title Contact Us
+
+ main 
+  section.contact__main 
+   .contact__element
+    img.contact-img(src="https://3kpnuxym9k04c8ilz2quku1czd-wpengine.netdna-ssl.com/wp-content/uploads/2013/10/Screen-shot-2013-10-27-at-10.51.49-PM.png", alt="")
+   .contact__element.grayish-white
+    h2.contact-title Meet Us
+    .contact__element--item 
+     img.contact-icon(src="assets/bx-phone.svg", alt="Phone")
+     p.contact-little-text +584145624785 
+
+    .contact__element--item
+     img.contact-icon(src="assets/alternate_email_black_24dp.svg", alt="Email")
+     p.contact-little-text lightmusic@gmail.com
+
+    .contact__element--item
+     img.contact-icon(src="assets/place_black_24dp.svg", alt="Location")
+     p.contact-little-text  South Of The City, California
+   .contact__element.light-lyla
+    h2.contact-title Pitch Us
+    p.contact-info Hello, we want to give you some information about us if you need it, send us an email to respond your doubts
+    a.contact-link(href="#") Learn More
+    
+ footer.footer__main 
+  a.page-logo(href="/"): img.logo-nav(src="/assets/logo.png", alt="")
+  ul.nav__footer
+     li.nav__item: a.nav__footer--link(href="/about") About
+     li.nav__item: a.nav__footer--link(href="/contact") Contact
+     li.nav__item: a.nav__footer--link(href="#") Item 3 
+     li.nav__item: a.nav__footer--link(href="#") Item 4 
+  .social-media
+   a.social-media__link(href="#"): img.social-media__img(src="assets/bxl-facebook-circle.svg", alt="Facebook")  
+   a.social-media__link(href="#"): img.social-media__img(src="assets/bxl-twitter.svg", alt="Twitter")  
+   a.social-media__link(href="#"): img.social-media__img(src="assets/bxl-instagram.svg", alt="Instagram")  
+ script(src="/js/landing.js") 

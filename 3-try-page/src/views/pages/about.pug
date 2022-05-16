@@ -1,0 +1,33 @@
+extends ../template/template
+include ../template/card
+block main 
+ header.header-main
+  img.about__img(src="assets/guitarist.jpeg", alt="")
+  nav.nav__menu
+   a.page-logo(href="/"): img.logo-nav(src="/assets/logo.png", alt="Logo")
+   ul#list.nav__main.nav__main--disappear
+     li.nav__item: a.nav__item--link(href="/about") About
+     li.nav__item: a.nav__item--link(href="/contact") Contact
+     li.nav__item: a.nav__item--link(href="#") Item 3 
+     li.nav__item: a.nav__item--link(href="#") Item 4 
+   img#hamburger.hamburger(src="assets/bx-menu.svg", alt="Menu")
+  .header-about
+   .header-about__text 
+    h1.header-about__title Take a look and meet us
+    p.header-about__info Here you can see what we offer you for the best learning. We are giving the best prices for what you want, since 25% until 50% of discount. Don't miss this chance of joining us
+
+    p.header-about__info Keep scrolling and you'll see
+
+ +card('assets/disk.jpg', 'assets/instruments.jpg', 'assets/drums.jpg') 
+ footer.footer__main 
+  a.page-logo(href="/"): img.logo-nav(src="/assets/logo.png", alt="")
+  ul.nav__footer
+     li.nav__item: a.nav__footer--link(href="/about") About
+     li.nav__item: a.nav__footer--link(href="/contact") Contact
+     li.nav__item: a.nav__footer--link(href="#") Item 3 
+     li.nav__item: a.nav__footer--link(href="#") Item 4 
+  .social-media
+   a.social-media__link(href="#"): img.social-media__img(src="assets/bxl-facebook-circle.svg", alt="Facebook")  
+   a.social-media__link(href="#"): img.social-media__img(src="assets/bxl-twitter.svg", alt="Twitter")  
+   a.social-media__link(href="#"): img.social-media__img(src="assets/bxl-instagram.svg", alt="Instagram")
+ script(src="/js/landing.js") 
